@@ -14,17 +14,17 @@ app.set('view engine', 'hbs');
 //    next();
 //});
 
-app.use((req, res, next) => {
-    var now = new Date();
-    var log = `${now}: ${req.method} ${req.url}`;
-    console.log(log);
-    fs.appendFile('server.log', log + '\n', (err) => {
-        if (err) {
-            console.log('Unable to append to server log');
-        }
-    });
-    next();
-});
+//app.use((req, res, next) => {
+//    var now = new Date();
+//    var log = `${now}: ${req.method} ${req.url}`;
+//    console.log(log);
+//    fs.appendFile('server.log', log + '\n', (err) => {
+//        if (err) {
+//            console.log('Unable to append to server log');
+//        }
+//    });
+//    next();
+//});
 
 app.use(express.static(__dirname + '/public'));
 
