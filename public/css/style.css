@@ -1,12 +1,26 @@
-body {
+body{
+    margin-top: 105px;
+}
+
+#homePage{
     background: #333;
     color: #fff;
 }
 
 .navbar{
-    border-bottom: #006ed6 1px solid;
-    opacity: 0.8;
+    box-shadow: 2px 2px 5px #7f944b;
+    background: #fff;
 }
+
+.navbar .nav-item{
+    font-size: 1rem;
+    padding-right: 1rem;
+}
+/*Old navbar
+.navbar{
+    border-bottom: #006ed6 3px solid;
+    opacity: 0.8;
+}*/
 
 .carousel-item{
     height: 450px;
@@ -22,3 +36,73 @@ body {
     background-size: cover;
     opacity: 0.7;
 }
+
+#showcase, #explore{
+    border-bottom: #7f944b 1px solid;
+}
+
+#explore .icon-font-size{
+    font-size: 3rem;
+}
+
+#explore a{
+    color: black;
+}
+
+/*About Us Page*/
+/*
+#aboutHeader{
+    margin-top: 55px;
+    height: 200px;
+    background: url('../img/pic7.jpg');
+    background-size: cover;
+    background-position: center;
+   
+    color: #fff;
+    border-bottom: 1px solid #006ed6;
+    padding-top: 50px;
+}
+
+
+.about-img{
+    margin-top: -50px;
+}*/
+
+body#aboutUsPage{
+    background: #fff;
+    /*color: #777; Should be black if there is an image*/
+}
+
+#about{
+    font-size: 15px;
+    font-family: -webkit-pictograph;
+}
+
+
+#about .aboutHeader,
+#team .aboutHeader{
+    color: rgb(47, 79, 79);
+    border-bottom: 1px solid #ccc;
+}
+
+#team img{
+    margin-top: -50px;
+}
+
+#team .aboutHeader{
+    font-family: -webkit-pictograph;
+}
+
+#team .card:hover{
+    background: lightgrey;
+    color:#fff;
+}
+
+#team .fab:hover{
+    color: #fff;
+}
+
+#team .fab{
+    color: #fff;
+}
+/*color of icon #7f944b*/

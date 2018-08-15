@@ -1,16 +1,64 @@
-
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <title>Home Page</title>
-</head>
-<body>
-    {{> header}}
-    <p>{{screamIt renderHBS}}</p>
-    
-    <!-- Injecting footer from footer.hbj template-->
+<html lang="en">
+{{> header}}
+<body id="homePage">
+    {{> navbar}}
+    <section id="showcase">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item carousel-image-1 active">
+                    <div class="container">
+                        <div class="carousel-caption d-none d-sm-block text-left">
+                            <h3 class="display-3">Projects</h3>
+                            <p class="lead">Dive into the projects where for us client satisfaction matters the most.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item carousel-image-2">
+                    <div class="container">
+                        <!--<div class="carousel-caption d-none d-sm-block text-right">
+                            <h3 class="display-3">Say Hello To Innovative Ideas!!</h3>
+                            <p class="lead">Let us build home of your dreams</p>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <a href="#myCarousel" data-slide="prev" class="carousel-control-prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a href="#myCarousel" data-slide="next" class="carousel-control-next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </section>
+    <section id="explore" class="bg-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-dark text-center mb-4">
+                    <span class="far fa-building icon-font-size"></span>
+                    <h4><a href="#">Our Projects</a></h4>
+                </div>
+                <div class="col-md-6 text-dark text-center">
+                    <span class="fas fa-mobile icon-font-size"></span>
+                    <h4><a href="#">Contact Us</a></h4>     
+                </div>
+                <!--<div class="col-md-6">
+                    <h3>Explore & Connect</h3>
+                    <a href="#"><h6 class="text-muted">Go Through Our Projects</h6></a>
+                    <p>Invest in our venture</p>
+                    <a href="#" class="btn btn-outline-primary">Contact Us</a>
+                   
+                </div> -->
+            </div>
+        </div>
+    </section>
     {{> footer}}
-    
-</body>
+    <script>
+        $('#navbar-home').parent().addClass('active');
+    </script>
+  </body>
 </html>

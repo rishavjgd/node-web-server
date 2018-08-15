@@ -48,9 +48,10 @@ app.get('/', (req, res) => {
     //});
 
     res.render('home.hbs', {
-        PageName: 'You are viewing the homepage of the project',
-        renderHBS: 'this is home page',
+        // PageName: 'You are viewing the homepage of the project',
+        // renderHBS: 'this is home page',
         //todaysDate: new Date().getFullYear()
+        //$('#home').parent().addClass('active');
     });
 
 
@@ -59,9 +60,10 @@ app.get('/', (req, res) => {
 app.get('/about', (req, res) => {
     //res.send('About the page. Just getting started');
     res.render('about.hbs', {
-        PageName: 'This is the about page. Thannkyou for visiting',
-        renderHBS: 'rendering the template file structure for the first time',
+        // PageName: 'This is the about page. Thannkyou for visiting',
+        // renderHBS: 'rendering the template file structure for the first time',
         //todaysDate: new Date().getFullYear()
+        //$("#about").parent().addClass('active');
     });
 
 });
