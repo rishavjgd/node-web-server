@@ -1,5 +1,6 @@
 body{
     margin-top: 105px;
+    min-height: 100%;
 }
 
 #homePage{
@@ -47,6 +48,7 @@ body{
 
 #explore a{
     color: black;
+
 }
 
 /*About Us Page*/
@@ -73,12 +75,13 @@ body#aboutUsPage{
     /*color: #777; Should be black if there is an image*/
 }
 
+#project,
 #about{
     font-size: 15px;
     font-family: -webkit-pictograph;
 }
 
-
+#project .aboutHeader,
 #about .aboutHeader,
 #team .aboutHeader{
     color: rgb(47, 79, 79);
@@ -107,3 +110,37 @@ body#aboutUsPage{
     color: #fff;
 }*/
 /*color of icon #7f944b*/
+
+#contactUsPage{
+    background: #fff;
+}
+
+.footer{
+    clear: both;
+    position: relative;
+    z-index: 10;
+    background-color: #7f944b;
+    /*height: 3em;
+    margin-top: -3em;*/
+}
+
+.btn-outline-custom{
+    color: rgb(134, 131, 131);
+    border-color: #7f944b;
+    background-color: transparent;
+    background-image: none;
+}
+
+.btn-outline-custom:hover{
+    color:#fff;
+    background-color: #7f944b;
+    border-color: #7f944b;
+}
+
+.footer-text{
+    padding-top:12px
+}
+
+#contact{
+    height: -webkit-fill-available;
+}

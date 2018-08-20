@@ -68,6 +68,14 @@ app.get('/about', (req, res) => {
 
 });
 
+app.get('/contactUs',(req,res)=>{
+    res.render('contact.hbs');
+});
+
+app.get('/projects',(req,res)=>{
+    res.render('projects.hbs');
+});
+
 app.get('/bad', (req, res) => {
     res.send({
         errorMessage: "Could not find appropriate server request"
